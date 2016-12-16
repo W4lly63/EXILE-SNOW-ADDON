@@ -18,3 +18,19 @@
 - [added] blizzard simulation effects. (can setup event starts and stop).
 - [added] Houses sounds.
 - [added] sea sounds and some environment sounds.
+
+Installation
+
+- Download ADDON :https://steamcommunity.com/sharedfiles/filedetails/?id=819154831&searchtext=snow+winter+effects
+- Put Addon in root arma3server directory.
+- copy key of addon inside key folder in arma3server directory.
+- open mission.sqm in missiondirectory and add to addon section "WY_PE" .
+- Enable Exile Snow inside config.cpp \ class yourMissionName and setup temperature with some value down to 1 grades
+- If you use map like chernarus winter create class inside config.cpp with name of map
+- Set "Thunderstorm"  in  ExileserverConfig as weather. set wind to 1 (optional)
+- Open mission\config.cpp , search "class CfgExileCustomCode" and add this line inside class
+
+ExileClient_system_snow_thread_update = "Snow\ExileClient_system_snow_thread_update.sqf";
+
+- Copy folders Snow  inside mission folder.
+- Copy init.sqf (or merge content) inside mission folder.
