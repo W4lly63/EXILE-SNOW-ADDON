@@ -10,7 +10,7 @@ _windOn                = true;                            // activate/deactivate
 _vlS                   = 1;                               // volume wind level ATTENTION !!!possible value ONLY 1 , 0.8 or 0.6 !!!! - less value less volume
 _vlSE                  = 1;                               // volume Environment Sounds level ATTENTION !!!possible value ONLY 1 , 0.8 or 0.6 !!!! - less value less volume
 //////////////////////////////////snow mask////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-_maskOn                = true;                            // activate/deactivate snowMask simulation true/false
+_maskOn                = false;                            // activate/deactivate snowMask simulation true/false
 _glassesOnlySnow       = true;                            // Work only with _maskOn = true -------   if you want snowMask only when snow falling or raining  - if false mask when sunny too
 _useCheckGlasses       = true;                            // Work only with _maskOn = true--------- check if player have mask defined in _gogglesArray ----- mask can be in all places , backpack , vest, uniform or assigned slot
 _gogglesArray          = [                                /* Work only with _maskOn = true--------- array of mask allowed */
