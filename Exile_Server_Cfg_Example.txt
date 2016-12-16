@@ -1,0 +1,103 @@
+/*
+Credits:  - Razor77 - dayzgreywolf.-
+*/
+
+Base temperature must be 1 or less for snow (else it's rain). To do this, edit your mission PBO's config.cpp:
+
+//Find 
+class Temperature
+
+//Will likely look somewhat like this:
+daytimeTemperature[] = {10.93,11.89,13.42,15.40,17.68,20.10,22.48,24.63,26.40,27.66,28.32,28.80,28.80,28.32,27.66,26.40,24.63,22.48,20.10,17.68,15.40,13.42,11.89,10.93,10.93};
+
+//Change that to 1 or less for snow. Here an example with +5 during day, and 1 during night. 
+daytimeTemperature[] = {1.00,1.00,1.00,1.00,5.00,5.00,5.00,5.00,5.00,5.00,5.00,5.00,5.00,5.00,5.00,5.00,2.00,2.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00};
+
+
+//Note in your exile_server PBO you have a config.cpp file with defined weather categories listed in
+class Weather
+
+//You can modify and add additional classes, ie
+        class Sunny
+        {
+            fogValue = 0;
+            fogDecay = 0;
+            fogBase = 0;
+            overcast = 0;
+            waves = 0.2;
+            wind = 0.1;
+            gusts = 0.1;
+            rain = 0;
+            lightnings = 0;
+            rainbows = 0;
+        };
+
+        class Overcast1
+        {
+            fogValue = 0.2;
+            fogDecay = 0.2;
+            fogBase = 5;
+            overcast = 0.2;
+            waves = 0.4;
+            wind = 0.2;
+            gusts = 0.5;
+            rain = 0;
+            lightnings = 0;
+            rainbows = 0;
+        };
+
+        class Overcast2
+        {
+            fogValue = 0.3;
+            fogDecay = 0.2;
+            fogBase = 5;
+            overcast = 0.4;
+            waves = 1;
+            wind = 0.27;
+            gusts = 0.5;
+            rain = 0;
+            lightnings = 0;
+            rainbows = 0;
+        };
+        
+            class Overcast3
+        {
+            fogValue = 0.4;
+            fogDecay = 0.2;
+            fogBase = 5;
+            overcast = 0.6;
+            waves = 1;
+            wind = 0.27;
+            gusts = 0.5;
+            rain = 0;
+            lightnings = 0;
+            rainbows = 0;
+        };
+        
+            class Overcast4
+        {
+            fogValue = 0.5;
+            fogDecay = 0.2;
+            fogBase = 5;
+            overcast = 0.8;
+            waves = 1;
+            wind = 0.3;
+            gusts = 0.5;
+            rain = 0;
+            lightnings = 0;
+            rainbows = 0;
+        };
+        
+            class Overcast5
+        {
+            fogValue = 0.6;
+            fogDecay = 0.2;
+            fogBase = 5;
+            overcast = 1;
+            waves = 1;
+            wind = 0.3;
+            gusts = 0.5;
+            rain = 0;
+            lightnings = 0;
+            rainbows = 0;
+}; 
