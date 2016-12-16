@@ -13,7 +13,7 @@
 - configurable options :snow\fn_settings.sqf
 
 - # v.0.7.0
-- [changed] Now all sounds files, classes and textures are inside addon (link above).
+- [changed] Now all sounds files, classes and textures are inside addon (link above or below).
 - [added] configurables sounds volume setup ( 1, 0.8, 0.6) for winds and environment sounds.
 - [added] blizzard simulation effects. (can setup event starts and stop).
 - [added] Houses sounds.
