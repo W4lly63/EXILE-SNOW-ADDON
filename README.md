@@ -24,6 +24,7 @@ Installation
 - Download ADDON :https://steamcommunity.com/sharedfiles/filedetails/?id=819154831&searchtext=snow+winter+effects
 - Put Addon in root arma3server directory.
 - copy key of addon inside key folder in arma3server directory.
+- Add to startup line addon. 
 - open mission.sqm in missiondirectory and add to addon section "WY_PE" .
 - Enable Exile Snow inside config.cpp \ class yourMissionName and setup temperature with some value down to 1 grades
 - If you use map like chernarus winter create class inside config.cpp with name of map
