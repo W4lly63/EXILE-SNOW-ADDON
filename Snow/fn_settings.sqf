@@ -33,7 +33,7 @@ _ssDistance           = 30;                              // max distance audible
 ///////////////////////Blizzard /////////////////////////////////////////
 
 _blizzOn              = true ;                          // activate/deactivate blizzard
-_timeStartblizz       = 300;                            // times starts  static time
+_timeStartblizz       = 300;                            // times starts  blizzard (serverTime)
 _blizzDuration        = 100;                           // duration time blizzard --- dnot set up values up to _timeStartBlizz value!!!
 
 _blizzWavesVel        = 10;                             //seconds between waves -- increase for less blizzard , decrease(test first!) for speed blizzard
