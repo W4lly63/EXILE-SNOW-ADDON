@@ -33,5 +33,5 @@ Installation
 
 ExileClient_system_snow_thread_update = "Snow\ExileClient_system_snow_thread_update.sqf";
 
-- Copy folders Snow  inside mission folder.
+- Copy folder Snow  inside mission folder.
 - Copy init.sqf (or merge content) inside mission folder.
