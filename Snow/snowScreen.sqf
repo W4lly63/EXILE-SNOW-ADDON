@@ -171,7 +171,7 @@ while {true} do {
 				hint composeText _strText;
 			};
 			//////////////////////////////////////////////////////////////////////////////////////
-			_ctrl ctrlsetText "WY_FILES\textures\fogM1.paa";
+			_ctrl ctrlsetText "";
       	    _ctrl ctrlSetPosition _pos;
       		_ctrl ctrlcommit 0;
 			_bodyTemp = 0;
