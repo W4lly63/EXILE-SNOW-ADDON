@@ -3,7 +3,17 @@ W4lly63 2016
 []execVM "Snow\snowEffects.sqf"
 
 */
+_house ="";
 
+KK_fnc_inHouse = {
+    lineIntersectsSurfaces [
+      getPosWorld _this,
+      getPosWorld _this vectorAdd [0, 0, 50],
+      _this, objNull, true, 1, "GEOM", "NONE"
+    ] select 0 params ["","","","_house"];
+    if (_house isKindOf "House") exitWith {true};
+    false;
+};
 
 WY_fnc_envirWind ={
 
@@ -77,7 +87,7 @@ WY_fnc_envirWind ={
     	if(changeWindSoundLvl || (gusts < 0.5))	then {
         	player say [_windLowSelected, 5,1];
 		};
-   	    if(changeWindSoundLvl)	then {
+   	    if(player call KK_fnc_inHouse)	then {
    	        _hhh = round(random 8) -4;
 	        _ggg = round(random 8) -4;
    	    	_soundNumb = floor random _snH;
@@ -121,7 +131,10 @@ _snC                   = 20;                               // number of last env
 _snS                   = 4;                               // number of last  environment Sea sound
 _snH                   = 16;                              // number of last House sound files
 
+
 if(_windOn) then {
 	0 = [_wn,_snF,_snC,_snS,_vlS,_vlSE,_snH] call WY_fnc_envirWind;
 };
+
+
 
