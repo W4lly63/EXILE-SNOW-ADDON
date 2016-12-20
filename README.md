@@ -13,7 +13,7 @@
 - configurable options :snow\fn_settings.sqf
 
 - # v.0.7.1
-- [solved] Houses sounds out of houses when raining.
+- [solved] Removed Houses sounds out of houses when raining.
 
 - # v.0.7.0
 - [changed] Now all sounds files, classes and textures are inside addon (link above or below).
