@@ -1,5 +1,10 @@
 # EXILE-SNOW-ADDON v.0.7.1 
 # Snow - Blizzard - SnowMask - Environment Sounds Effects
+<a rel="license" href="http://www.bistudio.com/licenses/arma-public-license-share-alike" target="_blank" >
+ <img src="http://www.bistudio.com/license-icons/small/APL-SA.png" >
+ <br>
+ This work is licensed under a Arma Public License Share Alike
+</a>
 - ADDON Required : 
   https://steamcommunity.com/sharedfiles/filedetails/?id=819154831&searchtext=snow+winter+effects
 
