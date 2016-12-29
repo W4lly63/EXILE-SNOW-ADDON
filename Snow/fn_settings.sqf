@@ -33,6 +33,7 @@ _ssDistance           = 30;                              // max distance audible
 ///////////////////////Blizzard /////////////////////////////////////////
 
 _blizzOn              = true ;                          // activate/deactivate blizzard
+_blizzCcOn            = true ;                         // activate deactivate white colorCorrection 
 _timeStartblizz       = 300;                            // times starts  blizzard (serverTime)
 _blizzDuration        = 100;                           // duration time blizzard --- dnot set up values up to _timeStartBlizz value!!!
 
