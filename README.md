@@ -16,6 +16,8 @@
 - Environment sounds effects. (forest, cities, sea, houses,footsteps)
 - Blizzard Effects.
 - configurable options :snow\fn_settings.sqf
+
+
 - # v.0.7.2
 - [added] Option for enable/disable Blizzard White ColorCorrection 
 - # v.0.7.1
