@@ -20,6 +20,7 @@
 
 - # v.0.7.2
 - [added] Option for enable/disable Blizzard White ColorCorrection 
+
 - # v.0.7.1
 - [solved] Removed Houses sounds out of houses when raining.
 
