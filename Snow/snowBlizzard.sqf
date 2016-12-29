@@ -5,6 +5,7 @@ W4lly63-2016
 private ["_obj","_pos","_effectsArray","_sleepColor","_house","_getTempValue","_tTemp","_ccS"];
 _house = "";
 _ccS = 0;
+_blizzCcOn = true;
 
 WY_fnc_deleteAll = {
   {
@@ -44,11 +45,12 @@ KK_fnc_inHouse = {
 WY_fnc_BlizzardAll = {
     _obj = (vehicle player);
     _pos = getposATL _obj;
-
-    ccSnow = ppEffectCreate ["colorCorrections", 1501];
-    ccSnow ppEffectEnable true;
-    ccSnow ppEffectAdjust [1, 1, 0, [0.31, 0.31, 1.0, 0.1], [0.85, 0.85, 0.92, 0.48], [1 , 1, 1, 0.03]];
-    ccSnow ppEffectCommit 0;
+    if(_blizzCcOn) then {
+       ccSnow = ppEffectCreate ["colorCorrections", 1501];
+       ccSnow ppEffectEnable true;
+       ccSnow ppEffectAdjust [1, 1, 0, [0.31, 0.31, 1.0, 0.1], [0.85, 0.85, 0.92, 0.48], [1 , 1, 1, 0.03]];
+       ccSnow ppEffectCommit 0;
+    };
 
     WY_Blizz_S1 = "#particlesource" createVehicleLocal _pos;
     WY_Blizz_S1 setParticleClass "WY_Blizzard";
@@ -132,15 +134,15 @@ if(_blizzOn) then {
       _timeStartblizz = round (_timeStartblizz/_ccS) + serverTime;
       _xCount = serverTime + _blizzDuration;
       //hint format["next restart at : %1   duration : %2", _timeStartblizz,_xCount];
-
-      ccSnow = ppEffectCreate ["colorCorrections", 1501];
-      ccSnow ppEffectEnable true;
-      ccSnow ppEffectAdjust [1, 1, 0, [0.31, 0.31, 1.0, 0.1], [0.85, 0.85, 0.92, 0.48], [1 , 1, 1, 0.03]];
-      ccSnow ppEffectCommit 10;
-      ccSnow ppEffectAdjust [1, 1, 0, [0.31, 0.31, 1.0, 0.1], [0.85, 0.85, 0.92, 0.48], [1 , 1, 1, 0.03]];
-      ccSnow ppEffectCommit 20;
-      sleep 20;
-
+      if(_blizzCcOn) then {
+         ccSnow = ppEffectCreate ["colorCorrections", 1501];
+         ccSnow ppEffectEnable true;
+         ccSnow ppEffectAdjust [1, 1, 0, [0.31, 0.31, 1.0, 0.1], [0.85, 0.85, 0.92, 0.48], [1 , 1, 1, 0.03]];
+         ccSnow ppEffectCommit 10;
+         ccSnow ppEffectAdjust [1, 1, 0, [0.31, 0.31, 1.0, 0.1], [0.85, 0.85, 0.92, 0.48], [1 , 1, 1, 0.03]];
+         ccSnow ppEffectCommit 20;
+         sleep 20;
+      };
     };
 
 
