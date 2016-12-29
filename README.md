@@ -1,4 +1,4 @@
-# EXILE-SNOW-ADDON v.0.7.1 
+# EXILE-SNOW-ADDON v.0.7.2 
 # Snow - Blizzard - SnowMask - Environment Sounds Effects
 <a rel="license" href="http://www.bistudio.com/licenses/arma-public-license-share-alike" target="_blank" >
  <img src="http://www.bistudio.com/license-icons/small/APL-SA.png" >
@@ -16,7 +16,8 @@
 - Environment sounds effects. (forest, cities, sea, houses,footsteps)
 - Blizzard Effects.
 - configurable options :snow\fn_settings.sqf
-
+- # v.0.7.2
+- [added] Option for enable/disable Blizzard White ColorCorrection 
 - # v.0.7.1
 - [solved] Removed Houses sounds out of houses when raining.
 
