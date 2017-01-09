@@ -1,4 +1,4 @@
-# EXILE-SNOW-ADDON v.0.7.2 
+# EXILE-SNOW-ADDON v.0.8.0 
 # Snow - Blizzard - SnowMask - Environment Sounds Effects
 <a rel="license" href="http://www.bistudio.com/licenses/arma-public-license-share-alike" target="_blank" >
  <img src="http://www.bistudio.com/license-icons/small/APL-SA.png" >
@@ -17,6 +17,8 @@
 - Blizzard Effects.
 - configurable options :snow\fn_settings.sqf
 
+- # v.0.8.0
+- [added] Retextured Snow Camo Pack (weapons,vehicles,uniforms and gears) (only addon changed, classnames.txt)
 
 - # v.0.7.2
 - [added] Option for enable/disable Blizzard White ColorCorrection 
