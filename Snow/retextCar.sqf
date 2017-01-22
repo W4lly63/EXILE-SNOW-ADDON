@@ -11,12 +11,12 @@ _retextKit = "WY_ToolKit";
 _vehFound = false;
 
 if(_retextureOn) then {
-_x addAction ["Retexture Now", "Snow\retextVehKit.sqf", nil , 0, false];
+
 
 if(_playerCount == 1 ) then {
 
   {
-
+    _x addAction ["Retexture Now", "Snow\retextVehKit.sqf", nil , 0, false];
     _vehArray = itemCargo _x;
     _vehFound = false;
     //_vehType = (typeOf _x) find "Offroad";
