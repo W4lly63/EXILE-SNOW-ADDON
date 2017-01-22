@@ -21,7 +21,7 @@
 - [solved] ADDON Fixed Conflicts classes WY_SU
 - [added] ADDON textures for retexture script
 - [added] ADDON class WY_ToolKit  (used inside retexture scripts and slide vehicles scipt)
- -[added] Retexture Script (with WY_ToolKit inside vehicles inventory now can retexture vehicles onfly)
+- [added] Retexture Script (with WY_ToolKit inside vehicles inventory now can retexture vehicles onfly)
 - [added] Vehicles Slide and slipping  script  ( if vehicles is not WY typeof or not have WY_ToolKit in inventory)
 
 - # v.0.8.1
