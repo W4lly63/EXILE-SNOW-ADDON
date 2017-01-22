@@ -1,5 +1,5 @@
-# EXILE-SNOW-ADDON v.0.8.1 
-# Snow - Blizzard - SnowMask - Environment Sounds Effects
+# EXILE-SNOW-ADDON v.0.9.0
+# Snow - Blizzard - SnowMask - Environment Sounds Effects - Retextures
 <a rel="license" href="http://www.bistudio.com/licenses/arma-public-license-share-alike" target="_blank" >
  <img src="http://www.bistudio.com/license-icons/small/APL-SA.png" >
  <br>
@@ -16,6 +16,13 @@
 - Environment sounds effects. (forest, cities, sea, houses,footsteps)
 - Blizzard Effects.
 - configurable options :snow\fn_settings.sqf
+
+- # v.0.9.0
+-[solved] ADDON Fixed Conflicts classes WY_SU
+-[added] ADDON textures for retexture script
+-[added] ADDON class WY_ToolKit  (used inside retexture scripts and slide vehicles scipt)
+-[added] Retexture Script (with WY_ToolKit inside vehicles inventory now can retexture vehicles onfly)
+-[added] Vehicles Slide and slipping  script  ( if vehicles is not WY typeof or not have WY_ToolKit in inventory)
 
 - # v.0.8.1
 - [solved] ADDON Fixed some errors path icons not showing in the inventory
@@ -46,9 +53,10 @@ Installation
 - Enable Exile Snow inside config.cpp \ class yourMissionName and setup temperature with some value down to 1 grades
 - If you use map like chernarus winter create class inside config.cpp with name of map
 - Set "Thunderstorm"  in  ExileserverConfig as weather. set wind to 1 (optional)
-- Open mission\config.cpp , search "class CfgExileCustomCode" and add this line inside class
+- Open mission\config.cpp , search "class CfgExileCustomCode" and add this lines inside class
 
 ExileClient_system_snow_thread_update = "Snow\ExileClient_system_snow_thread_update.sqf";
+ExileClient_system_trading_network_purchaseVehicleResponse = "Snow\ExileClient_system_trading_network_purchaseVehicleResponse.sqf";
 
 - Copy folder Snow  inside mission folder.
 - Copy init.sqf (or merge content) inside mission folder.
