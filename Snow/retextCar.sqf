@@ -65,4 +65,4 @@ if(_playerCount == 1 ) then {
   } forEach vehicles;
 
 };
-}:
+};
