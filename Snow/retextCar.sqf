@@ -12,7 +12,8 @@ _vehFound = false;
 
 if(_retextureOn) then {
     {
-        _x addAction ["Retexture Now", "Snow\retextVehKit.sqf", nil , 0, false];        
+        _x addAction ["<t color='#FF0000'>Retexture Vehicle</t>", "Snow\retextVehKit.sqf", nil , 0, false];
+        _x addAction ["<t color='#FF0000'>Retexture Uniform</t>", "Snow\retextU.sqf", nil , 0, false];
     } forEach vehicles;
 
 
