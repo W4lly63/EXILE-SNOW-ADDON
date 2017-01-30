@@ -1,4 +1,4 @@
-# EXILE-SNOW-ADDON v.0.9.0
+# EXILE-SNOW-ADDON v.0.9.1
 # Snow - Blizzard - SnowMask - Environment Sounds Effects - Retextures
 <a rel="license" href="http://www.bistudio.com/licenses/arma-public-license-share-alike" target="_blank" >
  <img src="http://www.bistudio.com/license-icons/small/APL-SA.png" >
@@ -16,6 +16,11 @@
 - Environment sounds effects. (forest, cities, sea, houses,footsteps)
 - Blizzard Effects.
 - configurable options :snow\fn_settings.sqf
+
+- # v.0.9.1
+- [added] Retexture Uniforms inside car script (need WY_ToolKit)
+- [added] ADDON Uniforms classes modelsides allsides and snow classes for not exile servers
+- [added] Not Exile folder with ARMA3 all servers compatible scripts
 
 - # v.0.9.0
 - [solved] ADDON Fixed Conflicts classes WY_SU
