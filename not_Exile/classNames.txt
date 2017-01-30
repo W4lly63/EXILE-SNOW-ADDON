@@ -1,0 +1,11 @@
+		       //Uniforms classes with modelsides = {0,1,2,3};
+           
+           class WY_Snow_All_co_a,
+		       class WY_Snow_All_co_b,
+		       class WY_Snow_All_co_c,
+		       class WY_All_GhillieFull_Night,
+		       class WY_All_GhillieFull_Day,
+		       class WY_All_GhillieLeo,
+		       class WY_Snow_All_i_a,
+		       class WY_Snow_All_i_b,
+		       class WY_Snow_All_i_c
