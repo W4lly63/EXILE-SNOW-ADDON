@@ -127,6 +127,6 @@ While {true} do {
     };
     _effectsArray = [WY_S_S1,WY_S_S2,WY_C_S1,WY_C_S2,WY_B_S1,WY_B_S2,WY_D_S1,WY_D_S2];
 
-    sleep 4;
+    sleep 2;
     0 = [] call WY_fnc_deleteAll;
 };
