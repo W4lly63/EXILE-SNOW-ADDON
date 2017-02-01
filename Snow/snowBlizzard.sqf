@@ -45,6 +45,7 @@ KK_fnc_inHouse = {
 WY_fnc_BlizzardAll = {
     _obj = (vehicle player);
     _pos = getposATL _obj;
+    if(isNil "WYBlizzVision") then { WYBlizzVision = false;};
     if(_blizzCcOn) then {
        ccSnow = ppEffectCreate ["colorCorrections", 1501];
        ccSnow ppEffectEnable true;
@@ -52,61 +53,125 @@ WY_fnc_BlizzardAll = {
        ccSnow ppEffectCommit 0;
     };
 
-    WY_Blizz_S1 = "#particlesource" createVehicleLocal _pos;
-    WY_Blizz_S1 setParticleClass "WY_Blizzard";
-    WY_Blizz_S1 setDropInterval 0.001;
+    if !(WYBlizzVision) then {
 
-    WY_Blizz_S2 = "#particlesource" createVehicleLocal _pos;
-    WY_Blizz_S2 setParticleClass "WY_SNOW_B";
-    WY_Blizz_S2 setDropInterval 0.004;
+        WY_Blizz_S1 = "#particlesource" createVehicleLocal _pos;
+        WY_Blizz_S1 setParticleClass "WY_Blizzard";
+        WY_Blizz_S1 setDropInterval 0.001;
 
-    WY_Cloud_S1 = "#particlesource" createVehicleLocal _pos;
-    WY_Cloud_S1 setParticleClass "WY_CLOUDS_A";
-    WY_Cloud_S1 setDropInterval 0.04;
+        WY_Blizz_S2 = "#particlesource" createVehicleLocal _pos;
+        WY_Blizz_S2 setParticleClass "WY_SNOW_B";
+        WY_Blizz_S2 setDropInterval 0.004;
 
-    WY_Cloud_S2 = "#particlesource" createVehicleLocal _pos;
-    WY_Cloud_S2 setParticleClass "WY_CLOUDS_B";
-    WY_Cloud_S2 setDropInterval 0.1;
+        WY_Cloud_S1 = "#particlesource" createVehicleLocal _pos;
+        WY_Cloud_S1 setParticleClass "WY_CLOUDS_A";
+        WY_Cloud_S1 setDropInterval 0.04;
 
-    WY_Flur_SA = "#particlesource" createVehicleLocal _pos;
-    WY_Flur_SA setParticleClass "WY_FLUR_A";
-    WY_Flur_SA setDropInterval 0.004;
+        WY_Cloud_S2 = "#particlesource" createVehicleLocal _pos;
+        WY_Cloud_S2 setParticleClass "WY_CLOUDS_B";
+        WY_Cloud_S2 setDropInterval 0.1;
 
-    WY_Flur_SB = "#particlesource" createVehicleLocal _pos;
-    WY_Flur_SB setParticleClass "WY_FLUR_B";
-    WY_Flur_SB setDropInterval 0.003;
+        WY_Flur_SA = "#particlesource" createVehicleLocal _pos;
+        WY_Flur_SA setParticleClass "WY_FLUR_A";
+        WY_Flur_SA setDropInterval 0.004;
 
-    WY_Flur_SC = "#particlesource" createVehicleLocal _pos;
-    WY_Flur_SC setParticleClass "WY_FLUR_C";
-    WY_Flur_SC setDropInterval 0.005;
+        WY_Flur_SB = "#particlesource" createVehicleLocal _pos;
+        WY_Flur_SB setParticleClass "WY_FLUR_B";
+        WY_Flur_SB setDropInterval 0.003;
 
-    WY_Flur_SD = "#particlesource" createVehicleLocal _pos;
-    WY_Flur_SD setParticleClass "WY_FLUR_D";
-    WY_Flur_SD setDropInterval 0.006;
+        WY_Flur_SC = "#particlesource" createVehicleLocal _pos;
+        WY_Flur_SC setParticleClass "WY_FLUR_C";
+        WY_Flur_SC setDropInterval 0.005;
 
-    WY_Flur_SE = "#particlesource" createVehicleLocal _pos;
-    WY_Flur_SE setParticleClass "WY_FLUR_E";
-    WY_Flur_SE setDropInterval 0.004;
+        WY_Flur_SD = "#particlesource" createVehicleLocal _pos;
+        WY_Flur_SD setParticleClass "WY_FLUR_D";
+        WY_Flur_SD setDropInterval 0.006;
 
-    WY_Blizz_SA = "#particlesource" createVehicleLocal _pos;
-    WY_Blizz_SA setParticleClass "WY_BLIZZ_SEC_A";
-    WY_Blizz_SA setDropInterval 0.001;
+        WY_Flur_SE = "#particlesource" createVehicleLocal _pos;
+        WY_Flur_SE setParticleClass "WY_FLUR_E";
+        WY_Flur_SE setDropInterval 0.004;
 
-    WY_Blizz_SB = "#particlesource" createVehicleLocal _pos;
-    WY_Blizz_SB setParticleClass "WY_BLIZZ_SEC_B";
-    WY_Blizz_SB setDropInterval 0.001;
+        WY_Blizz_SA = "#particlesource" createVehicleLocal _pos;
+        WY_Blizz_SA setParticleClass "WY_BLIZZ_SEC_A";
+        WY_Blizz_SA setDropInterval 0.001;
 
-    WY_Blizz_SC = "#particlesource" createVehicleLocal _pos;
-    WY_Blizz_SC setParticleClass "WY_BLIZZ_SEC_C";
-    WY_Blizz_SC setDropInterval 0.001;
+        WY_Blizz_SB = "#particlesource" createVehicleLocal _pos;
+        WY_Blizz_SB setParticleClass "WY_BLIZZ_SEC_B";
+        WY_Blizz_SB setDropInterval 0.001;
 
-    WY_Blizz_SD = "#particlesource" createVehicleLocal _pos;
-    WY_Blizz_SD setParticleClass "WY_BLIZZ_SEC_D";
-    WY_Blizz_SD setDropInterval 0.001;
+        WY_Blizz_SC = "#particlesource" createVehicleLocal _pos;
+        WY_Blizz_SC setParticleClass "WY_BLIZZ_SEC_C";
+        WY_Blizz_SC setDropInterval 0.001;
 
-    WY_Blizz_SE = "#particlesource" createVehicleLocal _pos;
-    WY_Blizz_SE setParticleClass "WY_BLIZZ_SEC_E";
-    WY_Blizz_SE setDropInterval 0.001;
+        WY_Blizz_SD = "#particlesource" createVehicleLocal _pos;
+        WY_Blizz_SD setParticleClass "WY_BLIZZ_SEC_D";
+        WY_Blizz_SD setDropInterval 0.001;
+
+        WY_Blizz_SE = "#particlesource" createVehicleLocal _pos;
+        WY_Blizz_SE setParticleClass "WY_BLIZZ_SEC_E";
+        WY_Blizz_SE setDropInterval 0.001;
+
+  };
+
+    if (WYBlizzVision) then {
+
+        WY_Blizz_S1 = "#particlesource" createVehicleLocal _pos;
+        WY_Blizz_S1 setParticleClass "WY_Blizzard";
+        WY_Blizz_S1 setDropInterval 0.01;
+
+        WY_Blizz_S2 = "#particlesource" createVehicleLocal _pos;
+        WY_Blizz_S2 setParticleClass "WY_SNOW_B";
+        WY_Blizz_S2 setDropInterval 0.01;
+
+        WY_Cloud_S1 = "#particlesource" createVehicleLocal _pos;
+        WY_Cloud_S1 setParticleClass "WY_CLOUDS_A";
+        WY_Cloud_S1 setDropInterval 0.1;
+
+        WY_Cloud_S2 = "#particlesource" createVehicleLocal _pos;
+        WY_Cloud_S2 setParticleClass "WY_CLOUDS_B";
+        WY_Cloud_S2 setDropInterval 0.2;
+
+        WY_Flur_SA = "#particlesource" createVehicleLocal _pos;
+        WY_Flur_SA setParticleClass "WY_FLUR_A";
+        WY_Flur_SA setDropInterval 0.01;
+
+        WY_Flur_SB = "#particlesource" createVehicleLocal _pos;
+        WY_Flur_SB setParticleClass "WY_FLUR_B";
+        WY_Flur_SB setDropInterval 0.01;
+
+        WY_Flur_SC = "#particlesource" createVehicleLocal _pos;
+        WY_Flur_SC setParticleClass "WY_FLUR_C";
+        WY_Flur_SC setDropInterval 0.01;
+
+        WY_Flur_SD = "#particlesource" createVehicleLocal _pos;
+        WY_Flur_SD setParticleClass "WY_FLUR_D";
+        WY_Flur_SD setDropInterval 0.01;
+
+        WY_Flur_SE = "#particlesource" createVehicleLocal _pos;
+        WY_Flur_SE setParticleClass "WY_FLUR_E";
+        WY_Flur_SE setDropInterval 0.01;
+
+        WY_Blizz_SA = "#particlesource" createVehicleLocal _pos;
+        WY_Blizz_SA setParticleClass "WY_BLIZZ_SEC_A";
+        WY_Blizz_SA setDropInterval 0.01;
+
+        WY_Blizz_SB = "#particlesource" createVehicleLocal _pos;
+        WY_Blizz_SB setParticleClass "WY_BLIZZ_SEC_B";
+        WY_Blizz_SB setDropInterval 0.01;
+
+        WY_Blizz_SC = "#particlesource" createVehicleLocal _pos;
+        WY_Blizz_SC setParticleClass "WY_BLIZZ_SEC_C";
+        WY_Blizz_SC setDropInterval 0.01;
+
+        WY_Blizz_SD = "#particlesource" createVehicleLocal _pos;
+        WY_Blizz_SD setParticleClass "WY_BLIZZ_SEC_D";
+        WY_Blizz_SD setDropInterval 0.01;
+
+        WY_Blizz_SE = "#particlesource" createVehicleLocal _pos;
+        WY_Blizz_SE setParticleClass "WY_BLIZZ_SEC_E";
+        WY_Blizz_SE setDropInterval 0.01;
+
+  };
 
     _effectsArray = [WY_Blizz_S1,WY_Blizz_S2,WY_Cloud_S1,WY_Cloud_S2,WY_Flur_SA,WY_Flur_SB,WY_Flur_SC,WY_Flur_SD,WY_Flur_SE,WY_Blizz_SA,WY_Blizz_SB,WY_Blizz_SC,WY_Blizz_SD,WY_Blizz_SE];
     (true)
