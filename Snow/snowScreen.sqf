@@ -19,8 +19,10 @@ _glassesOnlySnow = _this select 0;
 _useCheckGlasses = _this select 1;
 _gogglesArray = _this select 2;
 _noCheckBackpack = _this select 3;
+_blizzOn = _this select 4;
 _gogglesNamesArray =[];
 _gogglesImagesArray =[];
+WYBlizzVision = false;
 
 
 ////////////////////////////////display glasses//////////////////////////////////////////
@@ -127,11 +129,13 @@ while {true} do {
 	if (!_useCheckGlasses) then {
 		if(!_glassesOnlySnow) then {
         	0 = [_snowBodyTemp,_tTemp,_ctrl,_bodyTemp] call WY_fnc_Glasses;
+        	WYBlizzVision = true;
 			_checkRainSnow = false;
 		};
 		if(_glassesOnlySnow) then {
 	    	if(overcast >= 0.2) then {
             	0 = [_snowBodyTemp,_tTemp,_ctrl,_bodyTemp] call WY_fnc_Glasses;
+            	WYBlizzVision = true;
 				_checkRainSnow = false;
 			};
 	    	if(overcast < 0.2) then {
@@ -143,11 +147,13 @@ while {true} do {
 	    if(_playerHaveGlasses) then {
 			if(!_glassesOnlySnow) then {
         		0 = [_snowBodyTemp,_tTemp,_ctrl,_bodyTemp] call WY_fnc_Glasses;
+        		WYBlizzVision = true;
                 _checkRainSnow = false;
 			};
 			if(_glassesOnlySnow) then {
 	    		if(overcast >= 0.2) then {
             		0 = [_snowBodyTemp,_tTemp,_ctrl,_bodyTemp] call WY_fnc_Glasses;
+            		WYBlizzVision = true;
                     _checkRainSnow = false;
 				};
 			};
@@ -176,6 +182,7 @@ while {true} do {
       		_ctrl ctrlcommit 0;
 			_bodyTemp = 0;
 			_checkRainSnow = true;
+			WYBlizzVision = false;
 		};
 	};
 	if(visibleMap) then {
@@ -200,5 +207,5 @@ while {true} do {
 
 if(_maskOn) then {
 
-     0 = [_glassesOnlySnow,_useCheckGlasses,_gogglesArray,_noCheckBackpack] call WY_fnc_SnowMask;
+     0 = [_glassesOnlySnow,_useCheckGlasses,_gogglesArray,_noCheckBackpack,_blizzOn] call WY_fnc_SnowMask;
 };
