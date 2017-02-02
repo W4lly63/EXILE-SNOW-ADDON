@@ -13,8 +13,6 @@ In your mission folder create a new folder named "Snow" , copy inside all this f
 if (hasInterface) then {
     #include "Snow\fn_init.sqf"
 };
-
-
 waitUntil {time > 0};
 enableEnvironment false;
 
