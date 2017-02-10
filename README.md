@@ -18,7 +18,7 @@
 - configurable options :snow\fn_settings.sqf
 
 - # v.0.9.3
-- [solved] Exile bug - facewear disappear after logout/login (info below)
+- [solved] Exile bug - facewear disappear after logout/login (info installation below)
 
 - # v.0.9.2
 - [changed] Removed Bad visibility using snow mask script (without mask)
