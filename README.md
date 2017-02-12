@@ -19,7 +19,7 @@
 
 - # v.0.9.4
 - [added] ADDON updated with new uniforms ,gear,vehicles,weapons.
-- [solved] Blizzard Sinch with all players.
+- [solved] Blizzard Synch with all players.
 - [solved] Exile facewear patch now working for JIP near others players.
 - [changed] ExileServer_object_player_database_load.sqf  moved to ExilecustomCode
 
