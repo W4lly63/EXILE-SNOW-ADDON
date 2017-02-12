@@ -114,7 +114,7 @@ WY_fnc_BlizzardAll = {
 
 #include "fn_settings.sqf"
 
-_xCount = _timeStartblizz;
+_xCount = 36000;
 _blizzSstart = false;
 
 
@@ -122,16 +122,19 @@ if(_blizzOn) then {
 
 
 
+
   while {true} do {
 
 
 
-    if(serverTime > _timeStartblizz) then {
+    {
+
+    if(((serverTime > _x) && (serverTime < _x + _blizzDuration))) then {
 
       _blizzSstart = true;
-      _ccS =_ccS+1;
-      _timeStartblizz = round (_timeStartblizz/_ccS) + serverTime;
-      _xCount = serverTime + _blizzDuration;
+      //_ccS =_ccS+1;
+      //_timeStartblizz = round (_timeStartblizz/_ccS) + serverTime;
+      _xCount = _x + _blizzDuration;
       //hint format["next restart at : %1   duration : %2", _timeStartblizz,_xCount];
       if(_blizzCcOn) then {
          ccSnow = ppEffectCreate ["colorCorrections", 1501];
@@ -144,8 +147,10 @@ if(_blizzOn) then {
       };
     };
 
+    } forEach _timeStartblizz;
 
-    if (!(player call KK_fnc_inHouse)  && _blizzSstart) then {
+
+    if(!(player call KK_fnc_inHouse)  && _blizzSstart) then {
       0 = [] call WY_fnc_BlizzardAll;
       if(vehicle player == player) then {
          uiSleep _blizzWavesVel;
@@ -156,10 +161,10 @@ if(_blizzOn) then {
       //[] spawn WY_fnc_BackColor;
     };
 
-    if((serverTime > _xCount) && (_tTemp < 2 ) ) then {
+    if((serverTime > _xCount) ) then {
       //hint "OFF";
       _blizzSstart = false;
-      _xCount =serverTime + _timeStartblizz;
+      _xCount =36000;
       [] spawn WY_fnc_BackColor;
     };
   };
