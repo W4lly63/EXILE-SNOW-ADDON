@@ -1,4 +1,4 @@
-# EXILE-SNOW-ADDON v.0.9.3
+# EXILE-SNOW-ADDON v.0.9.4
 # Snow - Blizzard - SnowMask - Environment Sounds Effects - Retextures
 <a rel="license" href="http://www.bistudio.com/licenses/arma-public-license-share-alike" target="_blank" >
  <img src="http://www.bistudio.com/license-icons/small/APL-SA.png" >
@@ -16,6 +16,12 @@
 - Environment sounds effects. (forest, cities, sea, houses,footsteps)
 - Blizzard Effects.
 - configurable options :snow\fn_settings.sqf
+
+- # v.0.9.4
+- [added] ADDON updated with new uniforms ,gear,vehicles,weapons
+- [solved] Blizzard Sinch with all players
+- [solved] Exile facewear patch now working for JIP near others players
+
 
 - # v.0.9.3
 - [solved] Exile bug - facewear disappear after logout/login (info installation below)
