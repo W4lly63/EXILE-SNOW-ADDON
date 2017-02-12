@@ -18,10 +18,10 @@
 - configurable options :snow\fn_settings.sqf
 
 - # v.0.9.4
-- [added] ADDON updated with new uniforms ,gear,vehicles,weapons
-- [solved] Blizzard Sinch with all players
-- [solved] Exile facewear patch now working for JIP near others players
-
+- [added] ADDON updated with new uniforms ,gear,vehicles,weapons.
+- [solved] Blizzard Sinch with all players.
+- [solved] Exile facewear patch now working for JIP near others players.
+- [changed] ExileServer_object_player_database_load.sqf  moved to ExilecustomCode
 
 - # v.0.9.3
 - [solved] Exile bug - facewear disappear after logout/login (info installation below)
@@ -73,13 +73,12 @@ Installation
 - Set "Thunderstorm"  in  ExileserverConfig as weather. set wind to 1 (optional)
 - Open mission\config.cpp , search "class CfgExileCustomCode" and add this lines inside class
 
+ExileServer_object_player_database_load = "Snow\ExileServer_object_player_database_load.sqf";
 ExileClient_system_snow_thread_update = "Snow\ExileClient_system_snow_thread_update.sqf";
 ExileClient_system_trading_network_purchaseVehicleResponse = "Snow\ExileClient_system_trading_network_purchaseVehicleResponse.sqf";
 
 - Copy folder Snow  inside mission folder.
 - Copy init.sqf (or merge content) inside mission folder.
 
-- Open @ExileServer/addons and unpbo exile_server.pbo
-- open exile_server/code and replace file : ExileServer_object_player_database_load.sqf  with file downloaded from this mod
-- repack exile_server.pbo
+
 
