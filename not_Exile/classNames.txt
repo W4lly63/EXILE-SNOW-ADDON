@@ -1,6 +1,6 @@
 		       //Uniforms classes with modelsides = {0,1,2,3};
            
-           class WY_Snow_All_co_a,
+                       class WY_Snow_All_co_a,
 		       class WY_Snow_All_co_b,
 		       class WY_Snow_All_co_c,
 		       class WY_All_GhillieFull_Night,
@@ -9,3 +9,182 @@
 		       class WY_Snow_All_i_a,
 		       class WY_Snow_All_i_b,
 		       class WY_Snow_All_i_c
+		       class WY_All_Ghillie_coverall_a,
+		       class WY_All_Ghillie_coverall_b,
+		       class WY_Snow_All_O_clothing_a,
+		       class WY_Snow_All_O_clothing_b,
+		       class WY_Snow_All_O_clothing_c,
+		       class WY_Snow_All_HeliPilotCoverall_a,
+		       class WY_Snow_All_HeliPilotCoverall_b,
+		       class WY_Snow_All_HeliPilotCoverall_c	
+		       
+		       /// ALL CLASSES
+	           ///////////////////////////////////////////////////////////////////////////////
+		       // WY Snow Uniforms
+		       ///////////////////////////////////////////////////////////////////////////////
+		       class WY_Snow_co_a,
+		       class WY_Snow_co_b,
+		       class WY_Snow_co_c,
+		       class WY_GhillieFull_Night,
+		       class WY_GhillieFull_Day,
+		       class WY_GhillieLeo,
+		       class WY_Snow_i_a,
+		       class WY_Snow_i_b,
+		       class WY_Snow_i_c,
+		       class WY_Snow_All_co_a,
+		       class WY_Snow_All_co_b,
+		       class WY_Snow_All_co_c,
+		       class WY_All_GhillieFull_Night,
+		       class WY_All_GhillieFull_Day,
+		       class WY_All_GhillieLeo,
+		       class WY_Snow_All_i_a,
+		       class WY_Snow_All_i_b,
+		       class WY_Snow_All_i_c,
+		       class WY_Ghillie_coverall_a,
+		       class WY_All_Ghillie_coverall_a,
+		       class WY_Ghillie_coverall_b,
+		       class WY_All_Ghillie_coverall_b,
+		       class WY_Snow_O_clothing_a,
+		       class WY_Snow_O_clothing_b,
+		       class WY_Snow_O_clothing_c,
+		       class WY_Snow_All_O_clothing_a,
+		       class WY_Snow_All_O_clothing_b,
+		       class WY_Snow_All_O_clothing_c,
+		       class WY_Snow_HeliPilotCoverall_a,
+		       class WY_Snow_HeliPilotCoverall_b,
+		       class WY_Snow_HeliPilotCoverall_c,
+		       class WY_Snow_All_HeliPilotCoverall_a,
+		       class WY_Snow_All_HeliPilotCoverall_b,
+		       class WY_Snow_All_HeliPilotCoverall_c
+		       
+		       ///////////////////////////////////////////////////////////////////////////////
+		       // WY Snow Vests
+		       ///////////////////////////////////////////////////////////////////////////////
+		       class WY_Vest_snow_a,
+		       class WY_Vest_snow_b,
+		       class WY_Vest_snow_c,
+		       class WY_Vest_snow_tact_a,
+		       class WY_Vest_snow_tact_b,
+		       class WY_Vest_snow_tact_c,
+
+    	       ///////////////////////////////////////////////////////////////////////////////
+		       // WY Snow HeadGear
+		       ///////////////////////////////////////////////////////////////////////////////
+		       class WY_Snow_Boonie_a,
+		       class WY_Snow_Boonie_b,
+		       class WY_Snow_Boonie_c,
+		       class WY_Snow_Boonie_d,
+		       class WY_Snow_Boonie_e,
+		       class WY_Snow_Boonie_f,
+
+		       class WY_Snow_Shemag_a,
+		       class WY_Snow_Shemag_b,
+		       class WY_Snow_Shemag_c,
+		       class WY_Snow_Shemag_d,
+		       class WY_Snow_Shemag_e,
+		       class WY_Snow_Shemag_f,
+
+		       class WY_Snow_PilotHelmetHeli_O,
+		       class WY_Snow_CrewtHelmetHeli_O,
+		       class WY_Snow_H_HelmetO_ocamo_a,
+		       class WY_Snow_H_HelmetO_ocamo_b,
+
+		       class WY_Snow_H_Watchcap_a,
+		       class WY_Snow_H_Watchcap_b
+		       
+	///////////////////////////////////////////////////////////////////////////////
+	// WY Snow Facewear
+	///////////////////////////////////////////////////////////////////////////////
+	class WY_Snow_G_Combat_a,
+	class WY_Snow_G_Combat_b,
+	class WY_Snow_G_Combat_c,	
+	class WY_Snow_G_Balaclava_combat_a,
+	class WY_Snow_G_Balaclava_combat_b,						
+	class WY_Snow_G_Balaclava_combat_c,	       
+	class WY_Snow_G_Balaclava		    
+		      
+           class WY_Snow_Offroad_A,
+           class WY_Snow_Offroad_B,
+           class WY_Snow_Offroad_C,
+           class WY_Snow_Offroad_armed_D,
+           class WY_Snow_Offroad_armed_E,
+           class WY_Snow_Offroad_F,
+           class WY_Snow_Quadbike_F_A,
+           class WY_Snow_Quadbike_F_B,
+           class WY_Snow_Quadbike_F_C,
+           class WY_Snow_Quadbike_F_D,
+           class WY_Snow_Quadbike_F_E,
+           class WY_Snow_Quadbike_F_F,
+           class WY_Snow_B_MRAP_01_F_A,
+           class WY_Snow_B_MRAP_01_armed_F_B,
+           class WY_Snow_B_MRAP_01_F_C,
+           class WY_Snow_B_MRAP_01_F_D,
+           class WY_Snow_B_MRAP_01_armed_F_E,
+           class WY_Snow_B_MRAP_01_armed_F_F,
+           class WY_Snow_B_Truck_01_fuel_F_A,
+           class WY_Snow_B_Truck_01_fuel_F_B,
+           class WY_Snow_B_Truck_01_ammo_F_C,
+           class WY_Snow_B_Truck_01_ammo_F_D,
+           class WY_Snow_B_Truck_01_mover_F_E,
+           class WY_Snow_B_Truck_01_mover_F_F,
+           class WY_Snow_I_Truck_02_fuel_F_A,
+           class WY_Snow_I_Truck_02_fuel_F_B,
+           class WY_Snow_I_Truck_02_covered_F_C,
+           class WY_Snow_I_Truck_02_covered_F_D,
+           class WY_Snow_I_Truck_02_transport_F_E,
+           class WY_Snow_I_Truck_02_transport_F_F,
+           class WY_Snow_I_mrap_03_F_A,
+           class WY_Snow_I_mrap_03_F_B,
+           class WY_Snow_I_mrap_03_gmg_F_C,
+           class WY_Snow_I_mrap_03_gmg_F_D,
+           class WY_Snow_B_Heli_Light_01_F_A,
+           class WY_Snow_B_Heli_Light_01_F_B,
+           class WY_Snow_B_Heli_Light_01_F_C,
+           class WY_Snow_B_Heli_Transport_01_F_A,
+           class WY_Snow_B_Heli_Transport_01_F_B,
+           class WY_Snow_B_Heli_Transport_01_F_C,
+           class WY_Snow_B_Heli_Transport_03_F_A,
+           class WY_Snow_B_Heli_Transport_03_F_B,
+           class WY_Snow_B_Heli_Transport_03_F_C,
+
+           class WY_Snow_O_APC_Wheeled_02_rcws_F_a,
+           class WY_Snow_O_APC_Wheeled_02_rcws_F_b,
+           class WY_Snow_O_APC_Wheeled_02_rcws_F_c,
+           class WY_Snow_O_MRAP_02_base_F_a,
+           class WY_Snow_O_MRAP_02_gmg_F_b,
+           class WY_Snow_O_MRAP_02_gmg_F_c,
+           class WY_Snow_I_Heli_light_03_unarmed_F_a,
+           class WY_Snow_I_Heli_light_03_F_b,
+           class WY_Snow_I_Heli_light_03_F_c,
+           class WY_Snow_O_Heli_Light_02_unarmed_F_a,
+           class WY_Snow_O_Heli_Light_02_unarmed_F_b,
+           class WY_Snow_O_Heli_Light_02_F_c
+	   
+	   ////////////////////////////////////////////////////////////////////////
+	   //       WY Snow Weapons
+	   ///////////////////////////////////////////////////////////////////////
+           class WY_Snow_cheytac_m200_A,
+           class WY_Snow_cheytac_m200_B,
+           class WY_Snow_Rahim_a,
+           class WY_Snow_Rahim_b,
+           class WY_Snow_Mar10_a,
+           class WY_Snow_Mar10_b,
+           class WY_Snow_MK_I_EMR_a,
+           class WY_Snow_MK_I_EMR_b,
+           class WY_Snow_MMG_01_a,
+           class WY_Snow_MMG_01_b,
+           class WY_Snow_LMG_Zafir_F_a,
+           class WY_Snow_LMG_Zafir_F_b,
+           class WY_Snow_MX_F_a,
+           class WY_Snow_MX_F_b,
+           class WY_Snow_MXM_F_a,
+           class WY_Snow_NVGoggles,
+           class WY_ToolKit,
+
+           class WY_Snow_GM6_F_a,
+           class WY_Snow_GM6_F_b,
+           class WY_Snow_GM6_F_c,
+           class WY_Snow_MMG_02_a,
+           class WY_Snow_MMG_02_b,
+           class WY_Snow_MMG_02_c	   
+	   
