@@ -179,7 +179,7 @@ WY_fnc_BlizzardAll = {
 
 #include "fn_settings.sqf"
 
-_xCount = _timeStartblizz;
+_xCount = 36000;
 _blizzSstart = false;
 
 
@@ -192,12 +192,14 @@ if(_blizzOn) then {
     _getTempValue = format ["%1", [ExileClientEnvironmentTemperature, 1] call ExileClient_util_math_round];
     _tTemp = parseNumber _getTempValue;
 
-    if((serverTime > _timeStartblizz) && (_tTemp < 2 )) then {
+    {
+
+    if(((serverTime > _x) && (serverTime < _x + _blizzDuration)) && (_tTemp < 2 )) then {
 
       _blizzSstart = true;
-      _ccS =_ccS+1;
-      _timeStartblizz = round (_timeStartblizz/_ccS) + serverTime;
-      _xCount = serverTime + _blizzDuration;
+      //_ccS =_ccS+1;
+      //_timeStartblizz = round (_timeStartblizz/_ccS) + serverTime;
+      _xCount = _x + _blizzDuration;
       //hint format["next restart at : %1   duration : %2", _timeStartblizz,_xCount];
       if(_blizzCcOn) then {
          ccSnow = ppEffectCreate ["colorCorrections", 1501];
@@ -209,6 +211,8 @@ if(_blizzOn) then {
          sleep 20;
       };
     };
+
+    } forEach _timeStartblizz;
 
 
     if(!(player call KK_fnc_inHouse) && (_tTemp < 2 ) && _blizzSstart) then {
@@ -225,7 +229,7 @@ if(_blizzOn) then {
     if((serverTime > _xCount) && (_tTemp < 2 ) ) then {
       //hint "OFF";
       _blizzSstart = false;
-      _xCount =serverTime + _timeStartblizz;
+      _xCount =36000;
       [] spawn WY_fnc_BackColor;
     };
   };
