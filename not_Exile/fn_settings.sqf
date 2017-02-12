@@ -34,7 +34,7 @@ _ssDistance           = 30;                              // max distance audible
 
 _blizzOn              = true ;                          // activate/deactivate blizzard
 _blizzCcOn            = true ;                         // activate deactivate white colorCorrection
-_timeStartblizz       = 300;               // times starts array static time
+_timeStartblizz       = [300,600,900,1200];                // times starts array static time
 _blizzDuration        = 100;                           // duration time blizzard --- dnot set up to difference between times in _timeStartArray [1800,3600] -- 3600-1800= 1800 (_blizzDuration 1795 max)
 
 _blizzWavesVel        = 10;                             //seconds between waves -- increase for less blizzard , decrease(test first!) for speed blizzard
