@@ -18,5 +18,27 @@ waitUntil{ !isNil {missionNamespace getVariable (format ["GGPDB%1", getPlayerUID
           if (_exit) exitWith {};
      };
 };
+0 = 0 spawn {
+     private ['_exit','_activeScripts','_file'];
+     _exit = false;
+     while {true} do {
+          _activeScripts = diag_activeSQFScripts;
+          _exit = true;
+          {
+               _file = _x select 1;
+               if (['init.sqf',_file,false] call BIS_fnc_inString) then {
+                    _exit = false;
+               };
+          } count _activeScripts;
+          if (_exit) exitWith {};
+     };
+};
 sleep 1;
 player addGoggles  (missionNamespace getVariable (format ["GGPDB%1", getPlayerUID player]));
+sleep 5;
+while {true} do {
+    if(goggles player != "") exitWith {};
+    if((missionNamespace getVariable (format ["GGPDB%1", getPlayerUID player])) !="") then {
+        player addGoggles  (missionNamespace getVariable (format ["GGPDB%1", getPlayerUID player]));
+    };
+};
