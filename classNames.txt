@@ -1,17 +1,4 @@
 	///////////////////////////////////////////////////////////////////////////////
-	// WY Snow Uniforms
-	///////////////////////////////////////////////////////////////////////////////
-	class WY_Snow_co_a						{ quality = 3; price = 350;  sellPrice = 350; };
-	class WY_Snow_co_b						{ quality = 3; price = 350;  sellPrice = 350; };
-	class WY_Snow_co_c						{ quality = 3; price = 350;  sellPrice = 350; };
-	class WY_GhillieFull_Night							{ quality = 2; price = 300; sellPrice = 350; };
-	class WY_GhillieFull_Day						{ quality = 3; price = 350; sellPrice = 350; };
-	class WY_GhillieLeo						{ quality = 3; price = 350; sellPrice = 350; };
-	class WY_Snow_i_a						{ quality = 3; price = 350; sellPrice = 350; };
-	class WY_Snow_i_b							{ quality = 2; price = 300; sellPrice = 350; };
-	class WY_Snow_i_c						{ quality = 3; price = 350; sellPrice = 350; };
-
-	///////////////////////////////////////////////////////////////////////////////
 	// WY Snow Vests
 	///////////////////////////////////////////////////////////////////////////////
 	class WY_Vest_snow_a						{ quality = 3; price = 350; sellPrice = 350; };
@@ -38,6 +25,14 @@
 	class WY_Snow_Shemag_e						{ quality = 3; price = 350; sellPrice = 350; };
 	class WY_Snow_Shemag_f	                    { quality = 3; price = 350; sellPrice = 350; };
 
+	class WY_Snow_PilotHelmetHeli_O						{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_CrewtHelmetHeli_O						{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_H_HelmetO_ocamo_a	                    { quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_H_HelmetO_ocamo_b						{ quality = 3; price = 350; sellPrice = 350; };
+
+	class WY_Snow_H_Watchcap_a						{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_H_Watchcap_b	                    { quality = 3; price = 350; sellPrice = 350; };
+
 	///////////////////////////////////////////////////////////////////////////////
 	// WY Snow Backpacks
 	///////////////////////////////////////////////////////////////////////////////
@@ -53,9 +48,42 @@
 	class WY_Snow_AssoultPack_C	                    { quality = 3; price = 350; sellPrice = 350; };
 	class WY_Snow_AssoultPack_D						{ quality = 3; price = 350; sellPrice = 350; };
 	class WY_Snow_AssoultPack_E						{ quality = 3; price = 350; sellPrice = 350; };
-	class WY_Snow_AssoultPack_F	                    { quality = 3; price = 350; sellPrice = 350; };
-	
+
+
 	///////////////////////////////////////////////////////////////////////////////
+	// WY Snow Facewear
+	///////////////////////////////////////////////////////////////////////////////
+	class WY_Snow_G_Combat_a						{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_G_Combat_b						{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_G_Combat_c	                    { quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_G_Balaclava_combat_a						{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_G_Balaclava_combat_b						{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_G_Balaclava_combat_c	                    { quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_G_Balaclava	                    { quality = 3; price = 350; sellPrice = 350; };
+    
+	///////////////////////////////////////////////////////////////////////////////
+	// WY Snow Uniforms
+	///////////////////////////////////////////////////////////////////////////////
+	class WY_Snow_co_a						{ quality = 3; price = 350;  sellPrice = 350; };
+	class WY_Snow_co_b						{ quality = 3; price = 350;  sellPrice = 350; };
+	class WY_Snow_co_c						{ quality = 3; price = 350;  sellPrice = 350; };
+	class WY_GhillieFull_Night							{ quality = 2; price = 300; sellPrice = 350; };
+	class WY_GhillieFull_Day						{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_GhillieLeo						{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_i_a						{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_i_b							{ quality = 2; price = 300; sellPrice = 350; };
+	class WY_Snow_i_c						{ quality = 3; price = 350; sellPrice = 350; };
+
+	class WY_Ghillie_coverall_a						{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Ghillie_coverall_b						{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_O_clothing_a							{ quality = 2; price = 300; sellPrice = 350; };
+	class WY_Snow_O_clothing_b						{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_O_clothing_c						{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_HeliPilotCoverall_a						{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_HeliPilotCoverall_b						{ quality = 2; price = 300; sellPrice = 350; };
+	class WY_Snow_HeliPilotCoverall_c						{ quality = 3; price = 350; sellPrice = 350; };
+	
+		///////////////////////////////////////////////////////////////////////////////
 	// WY Snow Offroads
 	///////////////////////////////////////////////////////////////////////////////
 	class WY_Snow_Offroad_A						{ quality = 3; price = 350;  sellPrice = 350; };
@@ -95,9 +123,9 @@
 	class WY_Snow_B_Truck_01_ammo_F_D						{ quality = 3; price = 350; sellPrice = 350; };
 	class WY_Snow_B_Truck_01_mover_F_E						{ quality = 3; price = 350; sellPrice = 350; };
 	class WY_Snow_B_Truck_01_mover_F_F	                    { quality = 3; price = 350; sellPrice = 350; };
-	
+
 	///////////////////////////////////////////////////////////////////////////////
-	// WY Snow Truck 02
+	// WY Snow Kamaz
 	///////////////////////////////////////////////////////////////////////////////
 	class WY_Snow_I_Truck_02_fuel_F_A						{ quality = 3; price = 350; sellPrice = 350; };
 	class WY_Snow_I_Truck_02_fuel_F_B						{ quality = 3; price = 350; sellPrice = 350; };
@@ -105,7 +133,7 @@
 	class WY_Snow_I_Truck_02_covered_F_D						{ quality = 3; price = 350; sellPrice = 350; };
 	class WY_Snow_I_Truck_02_transport_F_E						{ quality = 3; price = 350; sellPrice = 350; };
 	class WY_Snow_I_Truck_02_transport_F_F	                    { quality = 3; price = 350; sellPrice = 350; };
-	
+
 	///////////////////////////////////////////////////////////////////////////////
 	// WY Snow Strider
 	///////////////////////////////////////////////////////////////////////////////
@@ -113,24 +141,60 @@
 	class WY_Snow_I_mrap_03_F_B						{ quality = 3; price = 350; sellPrice = 350; };
 	class WY_Snow_I_mrap_03_gmg_F_C	                    { quality = 3; price = 350; sellPrice = 350; };
 	class WY_Snow_I_mrap_03_gmg_F_D						{ quality = 3; price = 350; sellPrice = 350; };
-	
+
 	///////////////////////////////////////////////////////////////////////////////
-	// WY Snow Heli
+	// WY Snow Heli Light 1
 	///////////////////////////////////////////////////////////////////////////////
 	class WY_Snow_B_Heli_Light_01_F_A						{ quality = 3; price = 350; sellPrice = 350; };
 	class WY_Snow_B_Heli_Light_01_F_B						{ quality = 3; price = 350; sellPrice = 350; };
 	class WY_Snow_B_Heli_Light_01_F_C	                    { quality = 3; price = 350; sellPrice = 350; };
+
+	///////////////////////////////////////////////////////////////////////////////
+	// WY Snow Transport 1
+	///////////////////////////////////////////////////////////////////////////////
 	class WY_Snow_B_Heli_Transport_01_F_A						{ quality = 3; price = 350; sellPrice = 350; };
 	class WY_Snow_B_Heli_Transport_01_F_B						{ quality = 3; price = 350; sellPrice = 350; };
 	class WY_Snow_B_Heli_Transport_01_F_C	                    { quality = 3; price = 350; sellPrice = 350; };
+
+	///////////////////////////////////////////////////////////////////////////////
+	// WY Snow Transport 3
+	///////////////////////////////////////////////////////////////////////////////
 	class WY_Snow_B_Heli_Transport_03_F_A						{ quality = 3; price = 350; sellPrice = 350; };
 	class WY_Snow_B_Heli_Transport_03_F_B						{ quality = 3; price = 350; sellPrice = 350; };
 	class WY_Snow_B_Heli_Transport_03_F_C	                    { quality = 3; price = 350; sellPrice = 350; };
-	
+
 	///////////////////////////////////////////////////////////////////////////////
+	// WY Snow APC WHEELED
+	///////////////////////////////////////////////////////////////////////////////
+	class WY_Snow_O_APC_Wheeled_02_rcws_F_a						{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_O_APC_Wheeled_02_rcws_F_b						{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_O_APC_Wheeled_02_rcws_F_c	                    { quality = 3; price = 350; sellPrice = 350; };
+
+	///////////////////////////////////////////////////////////////////////////////
+	// WY Snow IFRIT
+	///////////////////////////////////////////////////////////////////////////////
+	class WY_Snow_O_MRAP_02_base_F_a						{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_O_MRAP_02_gmg_F_b						{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_O_MRAP_02_gmg_F_c	                    { quality = 3; price = 350; sellPrice = 350; };
+
+	///////////////////////////////////////////////////////////////////////////////
+	// WY Snow Heli Light 3
+	///////////////////////////////////////////////////////////////////////////////
+	class WY_Snow_I_Heli_light_03_unarmed_F_a					{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_I_Heli_light_03_F_b						{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_I_Heli_light_03_F_c	                    { quality = 3; price = 350; sellPrice = 350; };
+
+	///////////////////////////////////////////////////////////////////////////////
+	// WY Snow Heli Light 2
+	///////////////////////////////////////////////////////////////////////////////
+	class WY_Snow_O_Heli_Light_02_unarmed_F_a					{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_O_Heli_Light_02_unarmed_F_b					{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_O_Heli_Light_02_F_c	                    { quality = 3; price = 350; sellPrice = 350; };
+	
+		///////////////////////////////////////////////////////////////////////////////
 	// WY Snow Weapons////////////////////////////////////////////////////
 	///////////////////////////////////////////////////////////////////////////////
-	
+
 	class WY_Snow_cheytac_m200_A						{ quality = 3; price = 350;  sellPrice = 350; };
 	class WY_Snow_cheytac_m200_B						{ quality = 3; price = 350;  sellPrice = 350; };
 	class WY_Snow_Rahim_a						{ quality = 3; price = 350;  sellPrice = 350; };
@@ -146,16 +210,22 @@
 	class WY_Snow_MX_F_a							{ quality = 2; price = 300; sellPrice = 350; };
 	class WY_Snow_MX_F_b						{ quality = 3; price = 350; sellPrice = 350; };
 	class WY_Snow_MXM_F_a						{ quality = 3; price = 350; sellPrice = 350; };
-	
+
+	class WY_Snow_GM6_F_a						{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_GM6_F_b						{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_GM6_F_c						{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_MMG_02_a							{ quality = 2; price = 300; sellPrice = 350; };
+	class WY_Snow_MMG_02_b						{ quality = 3; price = 350; sellPrice = 350; };
+	class WY_Snow_MMG_02_c						{ quality = 3; price = 350; sellPrice = 350; };
+
 	///////////////////////////////////////////////////////////////////////////////
 	// WY Snow NV Goggles////////////////////////////////////////////////////
 	///////////////////////////////////////////////////////////////////////////////
 
-       class WY_Snow_NVGoggles						{ quality = 3; price = 350; sellPrice = 350; };
-       
-  	///////////////////////////////////////////////////////////////////////////////
-	// WY Snow ToolKIt////////////////////////////////////////////////////
-	///////////////////////////////////////////////////////////////////////////////  
-	
-	class WY_ToolKit					{ quality = 3; price = 50000; sellPrice = 50000; };
-    
+        class WY_Snow_NVGoggles						{ quality = 3; price = 350; sellPrice = 350; };
+
+    //////////////////////////////////////////////////////////////////////////////////
+    // WY ToolKIT
+    //////////////////////////////////////////////////////////////////////////////////
+
+        class WY_ToolKit                            { quality = 3; price = 350; sellPrice = 350; };
