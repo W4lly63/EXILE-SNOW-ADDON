@@ -53,7 +53,7 @@
 - [added] Retextured Snow Camo Pack (weapons,vehicles,uniforms and gears) (only addon changed, classnames.txt)
 
 - # v.0.7.2
-- [added] Option for enable/disable Blizzard White ColorCorrection 
+- [added] Option for enable/disable Blizzard White ColorCorrection
 
 - # v.0.7.1
 - [solved] Removed Houses sounds out of houses when raining.
