@@ -19,7 +19,7 @@
 
 - # v.0.9.5
 - [added] Trader System code for add/remove WY classes speedly.(info inside Custom/TraderAdditions folder)
--         Tnx to CrDraggin http://steamcommunity.com/id/crdraggin  that has provided this
+        Tnx to [url=http://steamcommunity.com/id/crdraggin] CrDraggin	[/url] that has provided this
 
 - # v.0.9.4
 - [added] ADDON updated with new uniforms ,gear,vehicles,weapons.
