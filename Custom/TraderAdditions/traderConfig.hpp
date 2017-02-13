@@ -95,4 +95,3 @@ CfgExileArsenal
 	};
 
 //8) In the mpmissions folder, add the following directory Custom\TraderAdditions
-//9) Drag the two .hpp files and place in the folder.
