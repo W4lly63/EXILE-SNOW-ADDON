@@ -51,7 +51,7 @@ CfgExileArsenal
 			"Backpacks",
 			"FirstAid",
 			"WYUniforms", //Add WY classnames here
-			"WYVest",
+			"WYVests",
 			"WYBackpacks",
 			"WYHeadgear",
 			"WYFacewear"
