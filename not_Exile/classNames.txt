@@ -101,7 +101,11 @@
 	class WY_Snow_G_Balaclava_combat_a,
 	class WY_Snow_G_Balaclava_combat_b,						
 	class WY_Snow_G_Balaclava_combat_c,	       
-	class WY_Snow_G_Balaclava		    
+	class WY_Snow_G_Balaclava
+	
+	 ///////////////////////////////////////////////////////////////////////////////
+	 // WY Snow Vehicles
+	 ///////////////////////////////////////////////////////////////////////////////
 		      
            class WY_Snow_Offroad_A,
            class WY_Snow_Offroad_B,
