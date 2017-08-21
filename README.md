@@ -86,7 +86,7 @@ ExileClient_system_snow_thread_update = "Snow\ExileClient_system_snow_thread_upd
 ExileClient_system_trading_network_purchaseVehicleResponse = "Snow\ExileClient_system_trading_network_purchaseVehicleResponse.sqf";
 
 - Copy folder Snow  inside mission folder.
-- Copy init.sqf (or merge content) inside mission folder.
+- Copy initPlayerLocal.sqf (or merge content) inside mission folder.
 
 
 
