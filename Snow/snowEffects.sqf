@@ -85,7 +85,7 @@ WY_fnc_envirWind ={
     	objSP allowDamage false;
    	    objSP enableSimulation false;
     	if(changeWindSoundLvl || (gusts < 0.5))	then {
-        	player say [_windLowSelected, 5,1];
+        	player say [_windLowSelected, 100,1];
 		};
    	    if(player call KK_fnc_inHouse)	then {
    	        _hhh = round(random 8) -4;
@@ -94,10 +94,10 @@ WY_fnc_envirWind ={
         	_soundSelected = format ["hr%1",_soundNumb];
         	objSP attachTo [player,[_hhh,_ggg,0]];
         	detach objSP;
-        	objSP say3D [_soundSelected,10,1];
+        	objSP say3D [_soundSelected,100,1];
 		};
     	if(!changeWindSoundLvl && (gusts >= 0.5))	then {
-        	player say [_windSelected, 5,1];
+        	player say [_windSelected, 100,1];
 			if ((vehicle player == player)) then {
 				detach objSP;
 
