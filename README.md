@@ -1,4 +1,4 @@
-# EXILE-SNOW-ADDON v.0.9.6
+# EXILE-SNOW-ADDON v.0.9.7
 # Snow - Blizzard - SnowMask - Environment Sounds Effects - Retextures
 <a rel="license" href="http://www.bistudio.com/licenses/arma-public-license-share-alike" target="_blank" >
  <img src="http://www.bistudio.com/license-icons/small/APL-SA.png" >
@@ -16,6 +16,9 @@
 - Environment sounds effects. (forest, cities, sea, houses,footsteps)
 - Blizzard Effects.
 - configurable options :snow\fn_settings.sqf
+
+- # v.0.9.7
+- [fixed] some messages didnt appear after lasts ARMA 3 updates.
 
 - # v.0.9.6
 - [fixed] winters environments dont load correctly after lasts ARMA 3 updates.
