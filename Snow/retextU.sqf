@@ -2,7 +2,7 @@ waitUntil {count vehicles > 1};
 waitUntil {alive player};
 private ["_vehArray","_retextKit","_veh","_textArrayUniforms"];
 _retextKit = "WY_ToolKit";
-if (uniform player == "") exitWith {hint str ("You dont have a Uniform!!")};
+if (uniform player == "") exitWith {cutText ["You dont have a Uniform!!","PLAIN"]};
 
 _textArrayUniforms = [
 
@@ -20,13 +20,13 @@ _textArrayUniforms = [
                     "WY_Snow_Vehicles\Data\camo6.paa"
 ];
 
-if(vehicle player == player) exitWith {hint str ("Get in Vehicle for retexture Uniform!!")};
+if(vehicle player == player) exitWith {cutText ["Get in Vehicle for retexture Uniform!!","PLAIN"]};
  _veh = vehicle player;
   _vehArray = itemCargo _veh;
-  if(not (_retextKit in _vehArray)) exitWith {hint str ("Need WY_ToolKit inside vehicle inventory for retexture!!")};
+  if(not (_retextKit in _vehArray)) exitWith {cutText ["Need WY_ToolKit inside vehicle inventory for retexture!!","PLAIN"]};
 
     {
-       hint format["Retexturing Uniform : %1%2", (20 * _x),"%"];
+       cutText [format["Retexturing Uniform : %1%2", (20 * _x),"%"],"PLAIN"];
        sleep 1;
     } forEach [1,2,3,4,5];
     _selectedTexture = selectRandom _textArrayUniforms;
