@@ -107,7 +107,7 @@ WY_fnc_CheckGlassesType = {
 waitUntil {alive player && ! isNull player };
 waitUntil {(!isNull (findDisplay 46))};
 
-_startT = (diag_tickTime + 80);
+_startT = (diag_tickTime + 3);
 ////////////////////////////////convert glasses classname in displayname  and pictures links ///////////////////////////////////////////
 // _text = getText (configFile >> "cfgGlasses" >> "G_Combat" >> "displayName");
 {
@@ -166,15 +166,18 @@ while {true} do {
 	    if(!_playerHaveGlasses) then {
 			//////////////////////view type of glasses required  and pictures/////////////////////////////////
 			if(diag_tickTime < _startT) then {
-				_strText = ["SNOW GLASSES REQUIRED...searching : ", lineBreak];
+				
+				_strText = [parseText "SNOW GLASSES REQUIRED...searching : <br />"];
 				for "_i" from 0 to ((count _gogglesArray) -1) do {
 					_strText pushBack (_gogglesNamesArray select _i);
 					_imgSelected = (_gogglesImagesArray select _i);
-					_imgSelTxt = parseText format["<img size='2'  image='%1'/>", _imgSelected];
+					
+					_imgSelTxt = image _imgSelected;
 					_strText pushBack _imgSelTxt;
-					_strText pushBack lineBreak;
+					_strText pushBack  parseText "<br />";
 		    	};
-				hint composeText _strText;
+		    	_strText = composeText _strText;
+				"" hintC  _strText;
 			};
 			//////////////////////////////////////////////////////////////////////////////////////
 			_ctrl ctrlsetText "";
