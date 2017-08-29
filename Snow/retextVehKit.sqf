@@ -8,10 +8,10 @@ _arrStr3 =[];
 
 #include "retextArrays.sqf"
 
-  if(vehicle player == player) exitWith {hint str ("Get in Vehicle for retexture!!")};
+  if(vehicle player == player) exitWith {cutText ["Get in Vehicle for retexture!!","PLAIN"]};
   _veh = vehicle player;
   _vehArray = itemCargo _veh;
-  if(not (_retextKit in _vehArray)) exitWith {hint str ("Need WY_ToolKit inside vehicle inventory for retexture!!")};
+  if(not (_retextKit in _vehArray)) exitWith {cutText ["Need WY_ToolKit inside vehicle inventory for retexture!!","PLAIN"]};
 
   {
      _vehType = (typeOf _veh) find _x;
@@ -24,7 +24,7 @@ _arrStr3 =[];
 ////////////////////WY_SNOW_PACK///////////////////////////////////////////
   if((_vehStr != "" ) && (_retextKit in _vehArray)) then {
     {
-       hint format["Retexturing Vehicle : %1%2", (20 * _x),"%"];
+       cutText [format["Retexturing Vehicle : %1%2", (20 * _x),"%"],"PLAIN"];
        sleep 1;
     } forEach [1,2,3,4,5];
     _selectedTexture = selectRandom _arrStr;
@@ -42,7 +42,7 @@ _arrStr3 =[];
 //////////////////Others///////////////////////////////////////////////
   if((_vehStr == "" ) && (_retextKit in _vehArray)) then {
     {
-       hint format["Retexturing Vehicle : %1%2", (20 * _x),"%"];
+       cutText [format["Retexturing Vehicle : %1%2", (20 * _x),"%"]];
        sleep 1;
     } forEach [1,2,3,4,5];
     _selectedTexture = selectRandom _textArrayCamo;
@@ -54,6 +54,7 @@ _arrStr3 =[];
     nul = _veh setObjectTextureGlobal [2,_selectedTexture];
 
   };
+
 
 
 
