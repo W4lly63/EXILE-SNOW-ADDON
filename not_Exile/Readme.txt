@@ -5,6 +5,7 @@ slideVeh.sqf // car slide on snow without WY_ToolKit
 snowEffects.sqf // environments winter sounds effects
 retextCar.sqf  and retextKitVeh.sqf  // retexture car onfly
 retextU.sqf // retexture Uniforms onfly
+removeWrecks.sqf  //  remove wrecks added by addon server/addon/a3_WY_Wrecks (pack to pbo add to server addon folder) obtain items
 
 How to use scripts
 In your mission folder create a new folder named "Snow" , copy inside all this files https://github.com/W4lly63/EXILE-SNOW-ADDON/tree/master/not_Exile , after open your mission init.sqf and add this 
