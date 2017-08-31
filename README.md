@@ -95,7 +95,7 @@ ExileClient_system_trading_network_purchaseVehicleResponse = "Snow\ExileClient_s
 - Copy folder Snow  inside mission folder.
 - Copy initPlayerLocal.sqf (or merge content) inside mission folder.
 
-- For activate Removewrecks script , pack @exileserver/addon/a3_WY_Wrecks provided into pbo  and add to exileserver addon folder
+- For activate Removewrecks script:  pack @exileserver/addon/a3_WY_Wrecks provided into a3_WY_Wrecks.pbo  and add to exileserver addon folder
 - setup fn_setting.sqf if needed.
 
 
