@@ -1,4 +1,4 @@
-# EXILE-SNOW-ADDON v.0.9.7
+# EXILE-SNOW-ADDON v.0.9.8
 # Snow - Blizzard - SnowMask - Environment Sounds Effects - Retextures
 <a rel="license" href="http://www.bistudio.com/licenses/arma-public-license-share-alike" target="_blank" >
  <img src="http://www.bistudio.com/license-icons/small/APL-SA.png" >
@@ -16,6 +16,10 @@
 - Environment sounds effects. (forest, cities, sea, houses,footsteps)
 - Blizzard Effects.
 - configurable options :snow\fn_settings.sqf
+
+- # v.0.9.8
+- [added] ADDON updated with snowly/frozen wrecks objects for removeWrecks script.
+- [added] RemoveWrecks script ( remove wrecks obtain items) (wrecks are spawned by @exileserver/addon/a3_WY_Wrecks.pbo)
 
 - # v.0.9.7
 - [fixed] some messages didnt appear after lasts ARMA 3 updates.
@@ -78,7 +82,7 @@ Installation
 - Put Addon in root arma3server directory. (addon required for clients too)
 - copy key of addon inside key folder in arma3server directory.
 - Add to startup line addon. 
-- open mission.sqm in missiondirectory and add to addon section "WY_PE" .
+- open mission.sqm in missiondirectory and add to addon section "WY_PE" (for removewrecks script add "WY_SWW" too).
 - Enable Exile Snow inside config.cpp \ class yourMissionName and setup temperature with some value down to 1 grades
 - If you use map like chernarus winter create class inside config.cpp with name of map
 - Set "Thunderstorm"  in  ExileserverConfig as weather. set wind to 1 (optional)
@@ -90,6 +94,9 @@ ExileClient_system_trading_network_purchaseVehicleResponse = "Snow\ExileClient_s
 
 - Copy folder Snow  inside mission folder.
 - Copy initPlayerLocal.sqf (or merge content) inside mission folder.
+
+- For activate Removewrecks script , pack @exileserver/addon/a3_WY_Wrecks provided into pbo  and add to exileserver addon folder
+- setup fn_setting.sqf if needed.
 
 
 
