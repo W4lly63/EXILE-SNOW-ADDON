@@ -47,4 +47,37 @@ _retextureOn = true ;
 
 _vehSlideOnSnow = true ;
 
+////////////////////Spawn frozen Wrecks //////////////////////////////////
+
+
+_itemsMinMax          = [10,15,20];                     // numb min med max  of items spawned when wreck will be removed
+
+_spawnItemsArray      = [                               // classes of items to spawn when wreck will be removed - add remove change items
+                          "FirstAidKit",
+                          "	Medikit"
+                        ];
+
+_wrecksTypes          = [                              //  classes of wrecks will be spawned (must be the same of _wrecksTypes in  @exileserver\addon\a3_WY_Wrecks\fn_settings.sqf)
+                                            "WY_Snow_Bmp2_wreck_F",
+                                            "WY_Snow_Brdm2_wreck_F",
+                                            "WY_Snow_Datsun_1_wreck_F",
+                                            "WY_Snow_Hilux_wreck_F",
+                                            "WY_Snow_T72_wreck_F",
+                                            "WY_Snow_UAZ_wreck_F",
+                                            "WY_Snow_URAL_wreck_F",
+                                            "WY_Snow_UH60_wreck_F",
+                                            "WY_Snow_BVP1T_wreck_F",
+                                            "WY_Snow_Fort_Barricade_F",
+                                            "WY_Snow_HMMWV_wreck_F",
+                                            "WY_Snow_SKOD_wreck_F"
+                        ];
+
+_wrecksDoubleItems    = [                            //  classes of wrecks - when removed spawn double of items
+                                            "WY_Snow_UH60_wreck_F",
+                                            "WY_Snow_Fort_Barricade_F"
+                        ];
+
+//////////////////////////end settings////////////////////////////////////
+
+
 //////////////////////////end settings////////////////////////////////////
